@@ -70,9 +70,17 @@ Edit
 
 <main>
     <h1>Country Music News</h1>
-    <p>............................</p>
-<p><img src="cnm1980.jpg" alt="Canadian artists collage"></>
-   </main>
+    <p>Click on the links below to access the latest country music news in PDF format:</p>
+    <ul>
+        <!-- Loop to create links from 1 to 383 -->
+        <!-- You can automate this part by using server-side scripting (e.g., PHP, Python) if needed -->
+        <script>
+            for (let i = 1; i <= 383; i++) {
+                document.write('<li><a class="pdf-link" href="country_music_news_' + i + '.pdf" target="_blank">Country Music News #' + i + '</a></li>');
+            }
+        </script>
+    </ul>
+</main>
 
 </body>
 </html>
